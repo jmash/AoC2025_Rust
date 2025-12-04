@@ -23,7 +23,7 @@ fn part1() {
     }
 
     for r in dial_rotations {
-        dial.turn_dial_in_direction(r);
+        dial.turn_dial_in_direction(&r);
         if dial.get_current_position() == 0 {
             total_zeros_count += 1;
         }

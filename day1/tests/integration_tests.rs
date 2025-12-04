@@ -35,7 +35,7 @@ fn processing_test_input_results_in_3() {
     }
 
     for r in dial_rotations {
-        dial.turn_dial_in_direction(r);
+        dial.turn_dial_in_direction(&r);
         println!("{}", dial.get_current_position());
         if dial.get_current_position() == 0 {
             total_zeros_count += 1;
@@ -43,4 +43,35 @@ fn processing_test_input_results_in_3() {
     }
 
     assert_eq!(3, total_zeros_count);
+}
+
+// ---- Part 2 ----
+#[test]
+fn processing_test_input_results_in_6() {
+    let mut dial = Dial::new(50).unwrap();
+    let mut total_zeros_count = 0;
+
+    let test_input = read_to_string("input/test_input.txt").unwrap();
+
+    let dial_rotation_strings = test_input.split('\n').collect::<Vec<&str>>();
+
+    let mut dial_rotations:Vec<DialRotation> = vec![];
+
+    for s in dial_rotation_strings {
+        let dial_rotation = get_dial_rotation(s);
+        dial_rotations.push(dial_rotation);
+    }
+
+    for r in dial_rotations {
+        dial.turn_dial_in_direction(&r);
+        println!("{}", dial.get_current_position());
+        if dial.does_dial_rotation_pass_zero(&r) {
+            total_zeros_count += 1;
+        }
+        if dial.get_current_position() == 0 {
+            total_zeros_count += 1;
+        }
+    }
+
+    assert_eq!(6, total_zeros_count);
 }

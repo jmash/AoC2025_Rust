@@ -11,8 +11,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fa0a5c7-69af-40fc-8be0-5c788cfdca73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1fa0a5c7-69af-40fc-8be0-5c788cfdca73" name="Changes" comment="Day 1 Part 2 - I can't believe it's stumping me -_-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
@@ -23,7 +22,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:test" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -67,12 +66,12 @@
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "language.rust",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Integration Test">
+  <component name="RunManager" selected="Cargo.Run">
     <configuration name="Integration Test" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="test" />
       <option name="command" value="test" />
@@ -128,9 +127,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cargo.Integration Test" />
       <item itemvalue="Cargo.Run" />
       <item itemvalue="Cargo.Test" />
+      <item itemvalue="Cargo.Integration Test" />
     </list>
   </component>
   <component name="RustProjectSettings">
@@ -145,29 +144,16 @@
       <updated>1764597676572</updated>
       <workItem from="1764597677925" duration="8400000" />
       <workItem from="1764617009701" duration="111000" />
-      <workItem from="1764617135718" duration="19722000" />
-      <workItem from="1764770964205" duration="298000" />
-      <workItem from="1764771271846" duration="26052000" />
+      <workItem from="1764617135718" duration="22683000" />
+      <workItem from="1764991559560" duration="3161000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
+    <MESSAGE value="Day 1 Part 2 - I can't believe it's stumping me -_-" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 1 Part 2 - I can't believe it's stumping me -_-" />
   </component>
 </project>

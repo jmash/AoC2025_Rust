@@ -95,20 +95,17 @@ impl Dial {
     pub fn increment_zero_count_if_dial_at_zero(&mut self) {
         if self.dial_is_at_zero() {
             self.zero_count += 1;
-            println!("Dial is at zero! Zero count now: {}", self.zero_count);
         }
     }
 
     pub fn increment_zero_count_by_full_rotations(&mut self, dial_rotation: &DialRotation) {
         self.zero_count += self.count_full_rotations(dial_rotation);
-        println!("Adding {} full rotations to zero count; zero count now: {}", self.count_full_rotations(dial_rotation), self.zero_count);
 
     }
 
     pub fn increment_zero_count_if_dial_rotates_past_zero(&mut self, dial_rotation: &DialRotation) {
         if self.check_if_dial_rotates_past_zero(dial_rotation) {
             self.zero_count += 1;
-            println!("Dial rotates past zero! Zero count now: {}", self.zero_count);
         }
     }
 

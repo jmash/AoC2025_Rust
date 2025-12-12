@@ -23,7 +23,7 @@ fn part1() {
     }
 
     for r in dial_rotations {
-        dial.turn_dial_in_direction(&r);
+        dial.turn_dial_in_direction_part1(&r);
         if dial.get_current_position() == 0 {
             total_zeros_count += 1;
         }
@@ -58,9 +58,7 @@ fn part2() {
     }
 
     for r in dial_rotations {
-        dial.increment_zero_count_if_dial_passes_zero(&r);
-        dial.turn_dial_in_direction(&r);
-        dial.increment_zero_count_if_dial_at_zero();
+        dial.turn_dial_in_direction_part2(&r);
     }
 
     println!("(Part 2): Total zeros count: {}", dial.get_zero_count());

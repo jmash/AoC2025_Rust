@@ -34,8 +34,7 @@ fn processing_test_input_results_in_3() {
     }
 
     for r in dial_rotations {
-        dial.turn_dial_in_direction(&r);
-        dial.increment_zero_count_if_dial_at_zero();
+        dial.turn_dial_in_direction_part1(&r);
     }
 
     assert_eq!(3, dial.get_zero_count());
@@ -57,8 +56,7 @@ fn processing_puzzle_input_results_in_1118() {
     }
 
     for r in dial_rotations {
-        dial.turn_dial_in_direction(&r);
-        dial.increment_zero_count_if_dial_at_zero();
+        dial.turn_dial_in_direction_part1(&r);
     }
 
     assert_eq!(1118, dial.get_zero_count());
@@ -81,9 +79,7 @@ fn processing_test_input_results_in_6() {
     }
 
     for r in dial_rotations {
-        dial.increment_zero_count_if_dial_passes_zero(&r);
-        dial.increment_zero_count_if_dial_at_zero();
-        dial.turn_dial_in_direction(&r);
+        dial.turn_dial_in_direction_part2(&r);
     }
 
     assert_eq!(6, dial.get_zero_count());

@@ -284,15 +284,7 @@ mod part2_tests {
 
         assert_eq!(dial_result_position, 41);
     }
-
-    // #[test]
-    // fn rotating_dial_right_by_1000_from_50_passes_zero_10_times() {
-    //     let dial_rotation = get_dial_rotation("R1000");
-    //     let mut dial = Dial::new(0, 0).unwrap();
-    //
-    //     assert_eq!(dial.get_zero_count(), 10);
-    // }
-
+    
     #[test]
     fn turning_dial_right_by_399_from_50_should_pass_zero_4_times_part2() {
         let dial_rotation = get_dial_rotation("R399");

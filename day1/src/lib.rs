@@ -56,7 +56,6 @@ impl Dial {
     pub fn turn_dial_in_direction_part2(&mut self, dial_rotation: &DialRotation) {
         self.increment_zero_count_if_dial_at_zero();
 
-        println!("Current dial: {}{}", dial_rotation.direction, dial_rotation.rotation_amount);
         match dial_rotation.get_direction() {
             'L' => {
                 self.increment_zero_count_by_full_rotations(dial_rotation);
@@ -284,7 +283,7 @@ mod part2_tests {
 
         assert_eq!(dial_result_position, 41);
     }
-    
+
     #[test]
     fn turning_dial_right_by_399_from_50_should_pass_zero_4_times_part2() {
         let dial_rotation = get_dial_rotation("R399");
